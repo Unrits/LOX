@@ -1,10 +1,10 @@
 import cv2
 
 # Инициализируем каскад Хаара для определения лиц
-face_cascade = cv2.CascadeClassifier('D:\\pythonProject\\Vovanchik\\haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 # Загружаем видеофайл
-video_path = 'D:\\pythonProject\\Vovanchik\\video.mp4'
+video_path = 'video.mp4'
 try:
     video_capture = cv2.VideoCapture(video_path)
 except Exception as e:
